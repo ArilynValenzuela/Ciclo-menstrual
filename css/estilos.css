@@ -227,7 +227,7 @@ header .textos-header{
 
 .container_banner{
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 80px;
 }
 
@@ -263,3 +263,60 @@ header .textos-header{
     border-radius: 50%;
 }
 
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* About */
+
+    .about{
+        grid-template-columns: 1fr;
+    }
+
+    .about.contenedor{
+        padding-top: 30%;
+    }
+    
+    .about__img--left{
+        text-align: center;
+    }
+
+    .about__img--left-child{
+        grid-row: 3/4;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+
+   
+}
